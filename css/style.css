@@ -1,0 +1,251 @@
+
+body {
+  background-color: none;
+  /* background-image: url('../img/box_game_bg.svg'); */
+  /* background-color: currentcolor; */
+  /* background-repeat: space; */
+  background-size: auto;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  /* width: 50%; */
+  /* margin-top: 15%; */
+    /* margin-bottom: 15%; */
+}
+
+a {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+a:hover {
+  color: #333;
+}
+
+#content {
+  width: auto;
+  margin: 10px auto;
+  /* background-color: #fff; */
+  /* background-image: url('../img/box_game_bg.svg'); */
+  background-position: center;
+
+  background-size: cover;
+  min-height: 200px;
+  position: relative;
+  /* top: 30%; */
+  left: 0px;
+  /* box-shadow: #888 0px 0px 5px; */
+  /* padding: 20px; */
+}
+
+#board {
+  padding: 200px 0px 200px 0px;
+  overflow: hidden;
+  width: 840px;
+  height: 300px;
+  text-align: center;
+}
+
+#box1,#box2,#box3 {
+  position: relative;
+  float: left;
+  margin: 20px;
+}
+
+#box1,#box2,#box3 {
+  overflow: hidden;
+  width: 240px;
+  height: 184px;
+}
+
+#box1 #box_o_t,#box2 #box_o_t,#box3 #box_o_t {
+  left: 0px;
+  position: relative;
+  top: 0px;
+  z-index: 100;
+}
+
+#box1 #box_o_b,#box2 #box_o_b,#box3 #box_o_b {
+  left: 0px;
+  position: relative;
+  top: -33px;
+  z-index: 300;
+}
+
+#kick_jump {
+  position: absolute;
+  z-index: 200;
+  top: -100px;
+  left: 0px;
+  display: none;
+}
+
+#msg_bd {
+  position: absolute;
+  top: 85%;
+  left: 0px;
+  width: 860px;
+  padding: none;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+#msg_bd_result {
+
+  top: 85%;
+  left: 0px;
+  width: 860px;
+  height: 1000px;
+  padding: none;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.color_0 {
+  /* background-color: #70B3CD !important; */
+}
+
+.color_1 {
+  /* background-color: #B12F2F !important; */
+  background-image: url('../img/success_img.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.color_2 {
+  /* background-color: #1F8E1A !important; */
+  background-image: url('../img/failure_img.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#footer {
+  position: fixed;
+  text-align: center;
+  background-color: #efefef;
+  color: #fff;
+  box-shadow: 0 0 5px #888;
+  font-size: 11px;
+  bottom: 0px;
+  width: 100%;
+  padding: 5px;
+}
+
+#heading {
+  /* position: absolute; */
+  top: 40px;
+  left: 20px;
+  font-size: 39px;
+  font-weight: bold;
+  text-align: center;
+  color: #555;
+}
+
+#start_game {
+  cursor: pointer;
+  margin: 0 auto;
+  /* border: 1px solid #e7a943; */
+  /* border-bottom-color: #d6982f; */
+  /* border-top-color: #f5b74e; */
+  color: #635e5e;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 10px 18px;
+  text-decoration: none;
+  /* text-shadow: 0 1px 0 #fede9d; */
+      /* CSS3 */
+  -moz-box-shadow: 0px 1px 2px #d9d9d9, inset 0px 1px 0px #ffe598;
+  -webkit-box-shadow: 0px 1px 2px #d9d9d9, inset 0px 1px 0px #ffe598;
+  box-shadow: 0px 1px 2px #d9d9d9, inset 0px 1px 0px #bbda00;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+      /* Gradient */
+  /* background-color: #feda71; */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#feda71), to(#febb49));
+ /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffff5c, #ffffff5c);
+ /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffff5c, #ffffff5c);
+ /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffffff5c, #ffffff5c);
+ /* IE10 */
+  background-image: -o-linear-gradient(top, #ffffff5c, #ffffff5c);
+ /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffff5c, #ffffff5c);
+}
+
+#start_game:hover {
+  /* background-color: #fee296; */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fee296), to(#fec166));
+ /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffffa1, #ffffffa1);
+ /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffffa1, #ffffffa1);
+ /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffffffa1, #ffffffa1);
+ /* IE10 */
+  background-image: -o-linear-gradient(top, #ffffffa1, #ffffffa1);
+ /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffffa1, #ffffffa1);
+}
+#redo_game {
+  cursor: pointer;
+  margin: 0 auto;
+  /* border: 1px solid #e7a943; */
+  /* border-bottom-color: #d6982f; */
+  /* border-top-color: #f5b74e; */
+  color: #635e5e;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 10px 18px;
+  text-decoration: none;
+  /* text-shadow: 0 1px 0 #fede9d; */
+      /* CSS3 */
+  -moz-box-shadow: 0px 1px 2px #d9d9d9, inset 0px 1px 0px #ffe598;
+  -webkit-box-shadow: 0px 1px 2px #d9d9d9, inset 0px 1px 0px #ffe598;
+  box-shadow: 0px 1px 2px #d9d9d9, inset 0px 1px 0px #bbda00;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+      /* Gradient */
+  /* background-color: #feda71; */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#feda71), to(#febb49));
+ /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffff5c, #ffffff5c);
+ /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffff5c, #ffffff5c);
+ /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffffff5c, #ffffff5c);
+ /* IE10 */
+  background-image: -o-linear-gradient(top, #ffffff5c, #ffffff5c);
+ /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffff5c, #ffffff5c);
+}
+
+#redo_game:hover {
+  /* background-color: #fee296; */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fee296), to(#fec166));
+ /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffffa1, #ffffffa1);
+ /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffffa1, #ffffffa1);
+ /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffffffa1, #ffffffa1);
+ /* IE10 */
+  background-image: -o-linear-gradient(top, #ffffffa1, #ffffffa1);
+ /* Opera 11.10+ */
+  background-image: linear-gradient(top, #ffffffa1, #ffffffa1);
+}
